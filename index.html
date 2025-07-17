@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bangalore House Price Predictor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #2c3e50;
+        }
+        .card {
+            margin-top: 50px;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .form-control {
+            margin-bottom: 15px;
+        }
+        .btn-primary {
+            width: 100%;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card mx-auto col-md-8">
+        <h2 class="text-center">Welcome to Bangalore House Price Predictor</h2>
+        <p class="text-center">Want to predict the price of a new House in Bangalore? Try filling the details below:</p>
+        <form action="/predict" method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Select the Location:</label>
+                    <select name="location" class="form-control" required>
+    <option value="1st Block Jayanagar">1st Block Jayanagar</option>
+    <option value="Electronic City">Electronic City</option>
+    <option value="Whitefield">Whitefield</option>
+    <option value="HSR Layout">HSR Layout</option>
+    <option value="Rajaji Nagar">Rajaji Nagar</option>
+    <option value="Indira Nagar">Indira Nagar</option>
+    <option value="Banashankari">Banashankari</option>
+    <option value="Koramangala">Koramangala</option>
+    <option value="Marathahalli">Marathahalli</option>
+    <option value="Malleshwaram">Malleshwaram</option>
+</select>
+
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Enter BHK:</label>
+                    <input type="number" name="bhk" class="form-control" placeholder="Enter BHK" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Enter Number of Bathrooms:</label>
+                    <input type="number" name="bath" class="form-control" placeholder="Enter Number of bathrooms" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Enter Total Square Feet:</label>
+                    <input type="number" name="sqft" class="form-control" placeholder="Enter Total Square Feet" required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Predict Price</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
