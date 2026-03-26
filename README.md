@@ -1,6 +1,6 @@
 # 🏠 Bangalore House Price Prediction Web Application
 
-This project is a **full-stack machine learning web application** built using **Flask**, designed to predict **house prices in Bangalore** based on user-provided inputs. It demonstrates seamless integration of a trained ML model with a responsive web interface.
+This project is a task 2 softgrowtech **full-stack machine learning web application** built using **Flask**, designed to predict **house prices in Bangalore** based on user-provided inputs. It demonstrates seamless integration of a trained ML model with a responsive web interface.
 
 
 ## 🎯 Project Objective
